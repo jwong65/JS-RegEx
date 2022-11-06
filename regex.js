@@ -94,6 +94,9 @@ let statusReg = /(status:)/i
 //casing to be ignore? Modifier i for case-insenstitve.
 //Trying () as it matches the exact group of characters being status:
 
-let statusTest = sampleApp.match(statusReg)
+//let statusTest = sampleApp.match(statusReg)
+let statusTest=sampleApp.search(statusReg)
 console.log(statusTest)
+//Can't use match then, need to use a method for first index where it's located. need to use search
 
+//got index 365 for output
