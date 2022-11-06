@@ -88,4 +88,12 @@ Expected Output:
 
 */ 
 
-let statusReg = /write your regex here/
+let statusReg = /(status:)/i
+
+
+//casing to be ignore? Modifier i for case-insenstitve.
+//Trying () as it matches the exact group of characters being status:
+
+let statusTest = sampleApp.match(statusReg)
+console.log(statusTest)
+
