@@ -38,7 +38,10 @@ let phoneReg = /\d{3}-\d{3}-\d{4}/g
 //use i for case insensitive -not neccesary with numbers
 //use g for global search 
 
-console.log(phoneReg)
+
+//to test we need the method to output an array. between match, search and replace.
+let phoneTest = sampleApp.match(phoneReg)
+console.log(phoneTest)
 
 
 /* 
