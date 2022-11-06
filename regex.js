@@ -62,7 +62,7 @@ Expected Output:
 
 */ 
 
-let emailReg = /\w[a-z]+/g
+let emailReg = /\w[a-z]+[@]+\w[a-z]+[.]+\w[a-z]+/g
 
 //alphanumberic is \w and for underscore as well.
 //to get all need [] as it matches any of the given characters(?)
