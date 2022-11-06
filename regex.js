@@ -62,7 +62,15 @@ Expected Output:
 
 */ 
 
-let emailReg = /write your regex here/
+let emailReg = /\w[a-z]/g
+
+//alphanumberic is \w and for underscore as well.
+//to get all need [] as it matches any of the given characters(?)
+//quantifier has to be g for global?
+
+let emailTest=sampleApp.match(emailReg)
+console.log(emailTest)
+
 
 /* 
 
