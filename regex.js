@@ -31,7 +31,15 @@ Expected Output:
 
 */ 
  
-let phoneReg = /write your regex here/
+let phoneReg = /\d{3}-\d{3}-\d{4}/g
+//d to match single digits.
+//{} to match preceding characters a specific number of times.
+
+//use i for case insensitive -not neccesary with numbers
+//use g for global search 
+
+console.log(phoneReg)
+
 
 /* 
 
