@@ -62,11 +62,13 @@ Expected Output:
 
 */ 
 
-let emailReg = /\w[a-z]/g
+let emailReg = /\w[a-z]+/g
 
 //alphanumberic is \w and for underscore as well.
 //to get all need [] as it matches any of the given characters(?)
 //quantifier has to be g for global?
+
+//Quantifer has to be + because it matches preceding characters 1 or more times.
 
 let emailTest=sampleApp.match(emailReg)
 console.log(emailTest)
